@@ -4,14 +4,6 @@
     </PropertyGroup>
 
     <ItemGroup Condition="'$(EnableMapsterExtensionsGeneratorUsing)' == 'true'">
-        <Using Include="MapsterExtensions.Generator"/>
+        <Using Include="MapsterExtensions.Generator" />
     </ItemGroup>
-
-    <Target Name="_MapsterExtensionsGeneratorInfo"
-            BeforeTargets="CoreCompile"
-            Condition="'$(LangVersion)' != '' AND $([MSBuild]::VersionLessThan('$(LangVersion)', '10.0')) AND '$(EnableMapsterExtensionsGeneratorUsing)' == 'true'">
-        <Message
-                Text="MapsterExtensions.Generator: C# 9 or older detected. To use [Generate], add 'using MapsterExtensions.Generator;'. (Automatic in C# 10+)."
-                Importance="low"/>
-    </Target>
 </Project>
