@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/MapsterExtensions.Generator.csproj": {}
+  },
+  "projects": {
+    "/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/MapsterExtensions.Generator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/MapsterExtensions.Generator.csproj",
+        "projectName": "MapsterExtensions.Generator",
+        "projectPath": "/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/MapsterExtensions.Generator.csproj",
+        "packagesPath": "/Users/ancplua/.nuget/packages/",
+        "outputPath": "/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ancplua/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet10/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100-preview.7.25380.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

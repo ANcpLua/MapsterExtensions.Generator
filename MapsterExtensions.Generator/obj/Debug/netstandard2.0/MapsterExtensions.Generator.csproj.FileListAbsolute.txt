@@ -1,0 +1,10 @@
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/bin/Debug/netstandard2.0/MapsterExtensions.Generator.deps.json
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/bin/Debug/netstandard2.0/MapsterExtensions.Generator.dll
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/bin/Debug/netstandard2.0/MapsterExtensions.Generator.pdb
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.csproj.AssemblyReference.cache
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.AssemblyInfoInputs.cache
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.AssemblyInfo.cs
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.csproj.CoreCompileInputs.cache
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.dll
+/Users/ancplua/RiderProjects/MapsterExtensions.Generator/MapsterExtensions.Generator/obj/Debug/netstandard2.0/MapsterExtensions.Generator.pdb
