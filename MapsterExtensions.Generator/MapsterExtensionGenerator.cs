@@ -24,27 +24,30 @@ public sealed class MapsterExtensionGenerator : IIncrementalGenerator
     private const string AttributeName = "Generate";
     private const string AttributeFullName = $"{AttributeNamespace}.{AttributeName}Attribute";
 
-    private const string AttributeSourceCode = $$"""
-
-                                                 #nullable enable
-                                                 using System;
-
-                                                 namespace {{AttributeNamespace}}
-                                                 {
-                                                     [Microsoft.CodeAnalysis.Embedded]
-                                                     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
-                                                     internal sealed class {{AttributeName}}Attribute : Attribute
-                                                     {
-                                                     }
-                                                 }
-                                                 """;
-
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         context.RegisterPostInitializationOutput(pi =>
         {
-            pi.AddEmbeddedAttributeDefinition();
-            pi.AddSource($"{AttributeName}Attribute.g.cs", SourceText.From(AttributeSourceCode, Encoding.UTF8));
+            // pi.AddEmbeddedAttributeDefinition(); compiles fine but Intellisense doesn't pick it up for some reason JetBrains Rider 2025.2 .NET 10 preview 7'
+            pi.AddSource("MapsterExtensions.Attributes.g.cs", SourceText.From($$"""
+                                                                                #nullable enable
+                                                                                using System;
+
+                                                                                namespace Microsoft.CodeAnalysis
+                                                                                {
+                                                                                    [System.Runtime.CompilerServices.CompilerGenerated]
+                                                                                    internal sealed class EmbeddedAttribute : Attribute { }
+                                                                                }
+
+                                                                                namespace {{AttributeNamespace}}
+                                                                                {
+                                                                                    [Microsoft.CodeAnalysis.Embedded]
+                                                                                    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
+                                                                                    internal sealed class {{AttributeName}}Attribute : Attribute
+                                                                                    {
+                                                                                    }
+                                                                                }
+                                                                                """, Encoding.UTF8));
         });
 
         var results = context.SyntaxProvider
