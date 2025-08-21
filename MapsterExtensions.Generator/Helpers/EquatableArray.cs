@@ -29,6 +29,7 @@ public readonly record struct EquatableArray<T>(ImmutableArray<T> Items)
             {
                 hash = hash * 31 + (item?.GetHashCode() ?? 0);
             }
+
             return hash;
         }
     }

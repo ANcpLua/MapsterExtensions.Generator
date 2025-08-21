@@ -1,5 +1,7 @@
 # MapsterExtensions.Generator
 
+[![NuGet](https://img.shields.io/nuget/v/MapsterExtensions.Generator.svg)](https://www.nuget.org/packages/MapsterExtensions.Generator)
+
 Generate extension methods from your Mapster mappings.
 
 ## Usage
