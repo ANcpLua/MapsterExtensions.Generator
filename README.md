@@ -7,7 +7,6 @@ Generate extension methods from your Mapster mappings.
 
 ```csharp
 using Mapster;
-using MapsterExtensions.Generator;
 
 public class MappingConfig : IRegister
 {
@@ -21,7 +20,9 @@ public class MappingConfig : IRegister
 
 Build. Use the generated extensions:
 ```csharp
-user.ToUserDto()
+user.Adapt<UserDto>();    // meh
+
+user.ToUserDto();         // nice, press T and Tab done
 ```
 
 ## License
