@@ -25,5 +25,8 @@ user.Adapt<UserDto>();    // meh
 user.ToUserDto();         // nice, press T and Tab done
 ```
 
+TLDR: The Generator scans [Generate] methods, finds config.NewConfig<A, B>() calls, and generates A.ToB() extensions for each one. 
+<p> No registrations = no generated code = compilation fails. </p>
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
